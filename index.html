@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Left</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js">
+        <div class="container">
+            <!-- main -->
+            <div class="main card startup">
+                <div class="icon">
+                    <img src="images/alarm.svg" alt="alarm">
+                </div>
+                <p class="title">[judul]</p>
+                <p class="message">[pesan]</p>
+                <div class="tag">
+                    <span></span>
+                    <p>Time Left</p>
+                    <span></span>
+                </div>
+                <p class="countdown">[timeleft]</p>
+                <p class="timer">[timer]</p>
+            </div>
+
+            <!-- setting -->
+            <div class="setting card">
+                <div class="icon">
+                    <img src="images/settings.svg" alt="settings">
+                </div>
+                <div class="content">
+                    <p>Judul</p>
+                    <input type="text" id="title" placeholder="Ketik judul">
+                    <p>Pesan</p>
+                    <input type="text" id="message" placeholder="Ketik pesan">
+                    <p>Tanggal</p>
+                    <input type="date" name="date" id="date">
+                    <p>Jam</p>
+                    <input type="time" name="time" id="time">
+                </div>
+            </div>
+
+            <!-- switch -->
+            <div class="switch">
+                <img src="images/settings.svg" alt="settings">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- particlesJS -->
+    <script src="assets/particles.js"></script>
+    <script src="assets/app.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
+            console.log('callback particles.js config loaded');
+        });
+    </script>
+</body>
+
+</html>
